@@ -21,7 +21,6 @@ class LoansPackageSeeder extends Seeder
             ['name' => 'Package D', 'frequency' => 12, 'interest_rate' => 0.02, 'created_at' => now(), 'updated_at' => now()],
         ];
 
-        $i = LoansPackage::insert($packages);
-        dd($i);
+        LoansPackage::insert($packages);
     }
 }

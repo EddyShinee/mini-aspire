@@ -20,7 +20,7 @@ class CreateLoansTable extends Migration
             $table->bigInteger("loan");
             $table->date("duration");
             $table->integer("frequency");
-            $table->integer("interest_rate");
+            $table->double("interest_rate");
             $table->integer("fee");
             $table->tinyInteger("status");
             $table->integer("payment_period");

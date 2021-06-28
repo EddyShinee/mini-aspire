@@ -80,7 +80,7 @@ class UserController extends ApiController
         ]);
 
         if ($validator->fails()) {
-            return $this->apiErrorWithCode($validator->errors(), 404);
+            return $this->apiErrorWithCode($validator->errors(), -1);
         }
 
         $user = User::create($validator->validated());

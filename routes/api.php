@@ -30,6 +30,10 @@ Route::group(
 
     Route::get('logout', ['uses' => 'UserController@logout']);
     Route::get('profile', ['uses' => 'UserController@getProfile']);
+    Route::get('loans', ['uses' => 'LoansController@getLoans']);
+    Route::post('loans', ['uses' => 'LoansController@doLoans']);
+    Route::put('loans/{loansId}', ['uses' => 'LoansController@updateLoans']);
+    Route::post('repayment', ['uses' => 'UserController@doRepayment']);
 
 });
 
