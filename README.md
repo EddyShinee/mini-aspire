@@ -37,3 +37,17 @@ DB_PASSWORD=root
 
 ``php artisan serve``
 
+###5. Get file API JSON and Import to Postman
+Please go to the project folder and get this file: \
+``New Collection.mini-aspire_postman_collection.json``
+Import file in to Postman and you can see the Request file.
+--------------------------------------------------------
+## How to use API
+
+###1. Run API Register 
+
+###2. Run API Login (Get the token and copy token to the Authentication Bearer Token)
+
+###3. Run API Create Loans
+
+###4. Run API Repayment
