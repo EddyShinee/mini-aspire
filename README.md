@@ -47,7 +47,7 @@ Run the service:
 Example: http://locahost:8000 or http://127.0.0.1:8000
 ### 5. Get file API JSON and Import to Postman
 
-Please go to the project folder ``Root`` and get this file: \
+#### Please go to the project folder ``Root`` and get this file: 
 ``New Collection.mini-aspire_postman_collection.json``
 Import file in to Postman and you can see the Request file.
 --------------------------------------------------------
