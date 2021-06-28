@@ -18,6 +18,8 @@ class CreateLoansPackagesTable extends Migration
             $table->string('name');
             $table->integer('frequency');
             $table->double('interest_rate');
+            $table->smallInteger('status')->default(1);
+            $table->smallInteger('is_deleted')->default(0);
             $table->timestamps();
         });
     }

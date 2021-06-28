@@ -38,9 +38,9 @@ class ApiController extends BaseController
     {
         $apiResp = [];
         $apiResp['status'] = $status ? 200 : 404;
-        $apiResp['data'] = $data;
-        $apiResp['msg'] = $message;
         $apiResp['errors'] = $error;
+        $apiResp['msg'] = $message;
+        $apiResp['data'] = $data;
         return response($apiResp, $code ? $code : 200);
     }
 

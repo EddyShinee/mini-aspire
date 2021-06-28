@@ -94,4 +94,13 @@ class User extends Authenticatable implements JWTSubject
         $this->attributes['password'] = bcrypt($password);
     }
 
+    public function setNameAttribute($family_name, $middle_name, $last_name)
+    {
+        if($middle_name != "") {
+            $this->attributes['name'] = $family_name. " " . $middle_name . " " . $last_name;
+        } else {
+            $this->attributes['name'] = $family_name. " " . $last_name;
+        }
+    }
+
 }

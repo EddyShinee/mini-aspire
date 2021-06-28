@@ -26,7 +26,7 @@ class UserController extends ApiController
         $token = JWTAuth::getToken();
         JWTAuth::invalidate($token);
 
-        return $this->apiSuccess("Logout success!");
+        return $this->apiSuccess("Logout successfully!");
     }
 
     public function login(Request $req)

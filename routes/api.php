@@ -41,5 +41,14 @@ Route::group(
 
     Route::post('login', 'UserController@login');
     Route::post('register', 'UserController@register');
+    Route::post('register', 'UserController@register');
+});
 
+Route::group(
+    [
+        'namespace' => 'Api',
+        'prefix' => 'loans',
+    ], function () {
+
+    Route::resource('package', 'LoansPackageController');
 });
