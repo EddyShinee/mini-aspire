@@ -15,6 +15,9 @@ class CreateLoansPackagesTable extends Migration
     {
         Schema::create('loans_packages', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->integer('frequency');
+            $table->double('interest_rate');
             $table->timestamps();
         });
     }

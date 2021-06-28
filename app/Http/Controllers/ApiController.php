@@ -34,18 +34,13 @@ class ApiController extends BaseController
     }
 
     // Uniform the response
-    public function apiResponse($status, $message, $data, $error, $code, $data_type=1)
+    public function apiResponse($status, $message, $data, $error, $code)
     {
         $apiResp = [];
-        $apiResp['code_token'] = 1;
-        $apiResp['data_type'] = $data_type;
         $apiResp['status'] = $status ? 200 : 404;
         $apiResp['data'] = $data;
         $apiResp['msg'] = $message;
         $apiResp['errors'] = $error;
-
-        //return response($apiResp, $code ? $code : ($status ? 200 : 500));
-        // Mobile library friendly with 200 response only: https://github.com/Alamofire/Alamofire
         return response($apiResp, $code ? $code : 200);
     }
 
