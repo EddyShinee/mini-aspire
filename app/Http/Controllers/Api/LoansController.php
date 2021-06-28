@@ -118,6 +118,7 @@ class LoansController extends ApiController
         $fee = isset($data['fee']) ? $data['fee'] : $loan->fee;
         $loan = isset($data['loan']) ? $data['loan'] : $loan->loan;
         $duration = isset($data['duration']) ? $data['duration'] : $loan->duration;
+        $total = $fee + $loan + ($loan * $loansPackage->interest_rate);
         $loan = [
             'user_id' => $user->id,
             'loans_package_id' => $data['loans_package_id'],
@@ -128,8 +129,8 @@ class LoansController extends ApiController
             'fee' => $fee,
             'status' => 1,
             'payment_period' => 0,
-            'total' => $fee + $loan + ($loan * $loansPackage->interest_rate),
-            'remain' => 0,
+            'total' => $total,
+            'remain' => $total,
             'updated_at' => now(),
             'created_at' => now(),
         ];

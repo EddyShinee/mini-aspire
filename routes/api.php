@@ -33,7 +33,7 @@ Route::group(
     Route::get('loans', ['uses' => 'LoansController@getLoans']);
     Route::post('loans', ['uses' => 'LoansController@doLoans']);
     Route::put('loans/{loansId}', ['uses' => 'LoansController@updateLoans']);
-    Route::post('repayment', ['uses' => 'UserController@doRepayment']);
+    Route::post('repayment', ['uses' => 'RepaymentController@doRepayment']);
 
 });
 
