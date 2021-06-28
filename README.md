@@ -24,10 +24,16 @@ DB_USERNAME=root\
 DB_PASSWORD=root
 
 ###3. Run bellow command:
+
 ####3.1 Composer update
+
 ``composer update``
+
 ####3.2 Run Migration and Seed
+
 ``php artisan migrate --seed``
+
 ###4. Run servive:
+
 ``php artisan serve``
 
