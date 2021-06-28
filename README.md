@@ -1,9 +1,14 @@
-# Welcom to Mini Aspire
+# Welcome to Mini Aspire
 ### Vu Duc Thuan
 ## Setup Project * Please following all step bellow
 
 ``This is a simple project with API Resgister, Login, CRUD Loans Package, CRD Loans and Repayment``
-
+### Project info:
+```
+- PHP version PHP 7.3.24 
+- MySQL 5.7.26
+- Laravel Framework 8.48.2
+```
 ### 1. Clone project from github link bellow
 Please check link bellow and checkout branch ``master``
 
