@@ -11,11 +11,13 @@ Please check link bellow and checkout branch ``master``
 
 ### 2. Config .ENV file
 After clone git please create database and change config in ``.env``
+if you don't have ``.env`` file when clone source code from git.
+Please duplicate file ``.env.example`` and rename file to ``.env``
 
 2.1 Create Database\
 Create database in mysql with whatever you want. Example: (mini-aspire).
 
-2.2 Get your database config from MYSQL and change information in  ``.env``
+2.2 Get your database config from MYSQL and change information in  ``.env``. Find the config bellow and replace information:
 ```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -27,17 +29,17 @@ DB_PASSWORD=root
 ### 3. Run bellow command:
 
 #### 3.1 Composer update
-
+Install package using in project:
 ``composer update``
 
 #### 3.2 Run Migration and Seed
-
+Run command to create table and data seed to database:
 ``php artisan migrate --seed``
 
 ### 4. Run servive:
-
+Run the service:
 ``php artisan serve``
-
+Example: http://locahost:8000 or http://127.0.0.1:8000
 ### 5. Get file API JSON and Import to Postman
 
 Please go to the project folder ``Root`` and get this file: \
@@ -53,3 +55,5 @@ Import file in to Postman and you can see the Request file.
 ### 3. Run API Create Loans
 
 ### 4. Run API Repayment
+
+
